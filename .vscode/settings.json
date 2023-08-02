@@ -1,0 +1,12 @@
+{
+    "sonarlint.pathToCompileCommands": "${workspaceFolder}/.vscode/compile_commands.json",
+    "files.associations": {
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "ranges": "cpp",
+        "typeinfo": "c",
+        "*.tcc": "cpp",
+        "type_traits": "cpp"
+    }
+}
