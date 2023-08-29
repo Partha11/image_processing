@@ -1,11 +1,11 @@
-CXX       := gcc
-CXX_FLAGS := -std=c17 -ggdb
+CXX       := g++
+CXX_FLAGS := -std=c++17 -ggdb
 
 BIN     := bin
-SRC     := src
+SRC     := $(wildcard src/*.cpp src/**/*.cpp src/***/**/*.cpp)
 INCLUDE := include
 
-LIBRARIES   :=
+LIBRARIES   := -lGL -lglfw -lGLU -lglut -lm
 EXECUTABLE  := main
 
 
@@ -15,8 +15,8 @@ run: clean all
 	clear
 	./$(BIN)/$(EXECUTABLE)
 
-$(BIN)/$(EXECUTABLE): $(SRC)/*.c
-	$(CXX) $(CXX_FLAGS) -I$(INCLUDE) $^ -o $@ $(LIBRARIES)
+$(BIN)/$(EXECUTABLE): $(SRC)
+	$(CXX) $(CXX_FLAGS) -I./$(INCLUDE) $^ $(LIBRARIES) -o $@
 
 clean:
 	-rm $(BIN)/*

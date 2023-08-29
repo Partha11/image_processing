@@ -1,32 +1,7 @@
-[  
-    {
-        "arguments": [
-            "/mnt/d/GitLab/cyancore/tools/avr-toolchain/bin/avr-gcc",
-            "-c",
-            "-std=c11",
-            "-I./src/include/",
-            "-Isrc/arch/avr/8/5/terravisor/../../common_5x_6/terravisor/include/",
-            "-I./src/include/visor/",
-            "-Os",
-            "-mmcu=atmega328p",
-            "-DARCH_8",
-            "-Wall",
-            "-Wextra",
-            "-Werror",
-            "-ffunction-sections",
-            "-fdata-sections",
-            "-fno-builtin",
-            "-DVERSION=0x01000302",
-            "-o",
-            "out/demo_cc_os_avr/src/lib/libc/string.o",
-            "src/lib/libc/string.c"
-        ],
-        "directory": "/mnt/d/GitLab/repo",
-        "file": "src/lib/libc/string.c"
-    },
-    {
-        "arguments": "...",
-        "directory": "...",
-        "file": "..."
-    }
+[
+  {
+    "directory": "/home/partha/Codes/Cpp/DU/Image_Processing",
+    "file": "src/main.cpp",
+    "command": "g++ -std=c++17 -ggdb -Iinclude src/file_util.cpp src/main.cpp -o bin/main -lmagic"
+  }
 ]
