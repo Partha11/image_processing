@@ -40,8 +40,6 @@
 
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](files/generated.pgm)
-
 The sole purpose of this project is to test the low level image processing without using any 3rd party libraries. It can read ppm/pgm binary files and produce a 2d array which contains the image pixels. Based on the operation type, it can modify the image pixels that are stored in the array. It is also possible to print the array to a file to visualize the changes that is occuring inside the image.
 
 It focuses on:
